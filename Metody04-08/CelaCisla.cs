@@ -11,15 +11,16 @@ namespace Metody04_08
         public static double Mocnina(int zaklad, int exponent)
         {
             double mocnina = 1;
-            int exponentPuvodni = Math.Abs(exponent);
+            bool zapornyExponent = exponent < 0;
 
-            for (int i = 0; i < exponentPuvodni; i++)
-            {
-                mocnina *= zaklad;
-            }
-            if (exponent < 0) mocnina = 1 / mocnina;
+
+            if(zapornyExponent) exponent = Math.Abs(exponent);
+            for (int i = 0; i < exponent; i++) mocnina *= zaklad;
+            if (zapornyExponent) mocnina = 1 / mocnina;
 
             return mocnina;
         }
+
+        
     }
 }

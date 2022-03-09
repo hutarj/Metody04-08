@@ -37,7 +37,7 @@
             this.mocninaExponent = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textboxFaktorial = new System.Windows.Forms.TextBox();
+            this.faktorialParametr = new System.Windows.Forms.TextBox();
             this.textBoxLich = new System.Windows.Forms.TextBox();
             this.textBoxPrvocislo = new System.Windows.Forms.TextBox();
             this.textBoxSud = new System.Windows.Forms.TextBox();
@@ -125,12 +125,12 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Exponent";
             // 
-            // textboxFaktorial
+            // faktorialParametr
             // 
-            this.textboxFaktorial.Location = new System.Drawing.Point(230, 9);
-            this.textboxFaktorial.Name = "textboxFaktorial";
-            this.textboxFaktorial.Size = new System.Drawing.Size(100, 20);
-            this.textboxFaktorial.TabIndex = 9;
+            this.faktorialParametr.Location = new System.Drawing.Point(230, 9);
+            this.faktorialParametr.Name = "faktorialParametr";
+            this.faktorialParametr.Size = new System.Drawing.Size(100, 20);
+            this.faktorialParametr.TabIndex = 9;
             // 
             // textBoxLich
             // 
@@ -161,7 +161,7 @@
             this.Controls.Add(this.textBoxSud);
             this.Controls.Add(this.textBoxPrvocislo);
             this.Controls.Add(this.textBoxLich);
-            this.Controls.Add(this.textboxFaktorial);
+            this.Controls.Add(this.faktorialParametr);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.mocninaExponent);
@@ -189,7 +189,7 @@
         private System.Windows.Forms.TextBox mocninaExponent;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textboxFaktorial;
+        private System.Windows.Forms.TextBox faktorialParametr;
         private System.Windows.Forms.TextBox textBoxLich;
         private System.Windows.Forms.TextBox textBoxPrvocislo;
         private System.Windows.Forms.TextBox textBoxSud;

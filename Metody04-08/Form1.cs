@@ -23,12 +23,11 @@ namespace Metody04_08
             int exponent = int.Parse(mocninaExponent.Text);
             double mocnina = CelaCisla.Mocnina(zaklad, exponent);
             MessageBox.Show("Mocnina je " + mocnina);
-
         }
 
         private void buttonFaktorial_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void buttonSoucetLich_Click(object sender, EventArgs e)
