@@ -20,7 +20,16 @@ namespace Metody04_08
 
             return mocnina;
         }
+        public static long Faktorial(int parametr)
+        {
+            long faktorial = 1;
+            for (int i = parametr; i > 0; i--)
+            {
+                faktorial *= i;
+            }
 
-        
+            return faktorial;
+        }
+
     }
 }

@@ -27,7 +27,10 @@ namespace Metody04_08
 
         private void buttonFaktorial_Click(object sender, EventArgs e)
         {
-            
+            int parametr = int.Parse(faktorialParametr.Text);
+            long faktorial = CelaCisla.Faktorial(parametr);
+
+            MessageBox.Show("Faktorial je " + faktorial);
         }
 
         private void buttonSoucetLich_Click(object sender, EventArgs e)
