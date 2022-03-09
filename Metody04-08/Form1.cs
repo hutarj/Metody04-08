@@ -43,7 +43,10 @@ namespace Metody04_08
 
         private void buttonPrvocislo_Click(object sender, EventArgs e)
         {
-
+            int cislo = int.Parse(textBoxPrvocislo.Text);
+            bool jePrvocislo = CelaCisla.JePrvocislo(cislo);
+            if (jePrvocislo) MessageBox.Show("Číslo " + cislo + " je prvočíslo");
+            else MessageBox.Show("Číslo " + cislo + " není prvočíslo");
         }
 
         private void buttonSudPocet_Click(object sender, EventArgs e)
