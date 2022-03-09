@@ -14,7 +14,7 @@ namespace Metody04_08
             bool zapornyExponent = exponent < 0;
 
 
-            if(zapornyExponent) exponent = Math.Abs(exponent);
+            if (zapornyExponent) exponent = Math.Abs(exponent);
             for (int i = 0; i < exponent; i++) mocnina *= zaklad;
             if (zapornyExponent) mocnina = 1 / mocnina;
 
@@ -29,6 +29,21 @@ namespace Metody04_08
             }
 
             return faktorial;
+        }
+
+        public static int CifLichSoucet(int cislo)
+        {
+            int cifSoucet = 0;
+            int cifra;
+            while (cislo > 0)
+            {
+                cifra = cislo % 10;
+                if (cifra % 2 != 0) cifSoucet += cifra;
+                cislo /= 10;
+            }
+
+            return cifSoucet;
+
         }
 
     }

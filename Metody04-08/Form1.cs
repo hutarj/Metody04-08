@@ -35,7 +35,10 @@ namespace Metody04_08
 
         private void buttonSoucetLich_Click(object sender, EventArgs e)
         {
+            int cislo = int.Parse(textBoxLich.Text);
+            int cifSoucet = CelaCisla.CifLichSoucet(cislo);
 
+            MessageBox.Show("Ciferný součet lichých cifer je " + cifSoucet);
         }
 
         private void buttonPrvocislo_Click(object sender, EventArgs e)
