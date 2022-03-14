@@ -56,5 +56,14 @@ namespace Metody04_08
 
             MessageBox.Show("Počet sudých dělitelů je " + pocetSudDel);
         }
+
+        private void buttonNsd_Click(object sender, EventArgs e)
+        {
+            int cislo1 = int.Parse(nsdCislo1.Text);
+            int cislo2 = int.Parse(nsdCislo2.Text);
+            int nsd = CelaCisla.Nsd(cislo1, cislo2);
+
+            MessageBox.Show("Největší společný dělitel je " + nsd);
+        }
     }
 }

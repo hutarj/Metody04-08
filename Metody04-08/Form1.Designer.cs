@@ -41,6 +41,9 @@
             this.textBoxLich = new System.Windows.Forms.TextBox();
             this.textBoxPrvocislo = new System.Windows.Forms.TextBox();
             this.textBoxSud = new System.Windows.Forms.TextBox();
+            this.nsdCislo2 = new System.Windows.Forms.TextBox();
+            this.nsdCislo1 = new System.Windows.Forms.TextBox();
+            this.buttonNsd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonMocnina
@@ -153,11 +156,38 @@
             this.textBoxSud.Size = new System.Drawing.Size(100, 20);
             this.textBoxSud.TabIndex = 12;
             // 
+            // nsdCislo2
+            // 
+            this.nsdCislo2.Location = new System.Drawing.Point(68, 159);
+            this.nsdCislo2.Name = "nsdCislo2";
+            this.nsdCislo2.Size = new System.Drawing.Size(100, 20);
+            this.nsdCislo2.TabIndex = 15;
+            // 
+            // nsdCislo1
+            // 
+            this.nsdCislo1.Location = new System.Drawing.Point(68, 133);
+            this.nsdCislo1.Name = "nsdCislo1";
+            this.nsdCislo1.Size = new System.Drawing.Size(100, 20);
+            this.nsdCislo1.TabIndex = 14;
+            // 
+            // buttonNsd
+            // 
+            this.buttonNsd.Location = new System.Drawing.Point(68, 185);
+            this.buttonNsd.Name = "buttonNsd";
+            this.buttonNsd.Size = new System.Drawing.Size(100, 23);
+            this.buttonNsd.TabIndex = 13;
+            this.buttonNsd.Text = "NSD";
+            this.buttonNsd.UseVisualStyleBackColor = true;
+            this.buttonNsd.Click += new System.EventHandler(this.buttonNsd_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.nsdCislo2);
+            this.Controls.Add(this.nsdCislo1);
+            this.Controls.Add(this.buttonNsd);
             this.Controls.Add(this.textBoxSud);
             this.Controls.Add(this.textBoxPrvocislo);
             this.Controls.Add(this.textBoxLich);
@@ -193,6 +223,9 @@
         private System.Windows.Forms.TextBox textBoxLich;
         private System.Windows.Forms.TextBox textBoxPrvocislo;
         private System.Windows.Forms.TextBox textBoxSud;
+        private System.Windows.Forms.TextBox nsdCislo2;
+        private System.Windows.Forms.TextBox nsdCislo1;
+        private System.Windows.Forms.Button buttonNsd;
     }
 }
 
